@@ -1,5 +1,5 @@
 # htb
-A repo for htb notes and idk
+A repo for my htb notes and idk
 
 ## Owned Machines
 | Machine Name | Date | Link |
