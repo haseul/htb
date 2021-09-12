@@ -1,4 +1,5 @@
 [GTFOBins](https://gtfobins.github.io/), [LinSmartEnum](https://github.com/diego-treitos/linux-smart-enumeration), [LinEnum](https://github.com/rebootuser/LinEnum), [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
+[Sherlock](https://github.com/rasta-mouse/Sherlock)
 
 ----
 ## scan ports
@@ -9,6 +10,15 @@ nmap -T4 -sC -sV -p- --min-rate=1000 -oN <FILE> <IP> -Pn
 # masscan all tcp ports
 massscan -p1-65535 <IP>
 ```
+
+## find files
+```bash
+find / -iname <file>.txt 2>/dev/null # linux
+dir <file>.txt /S /B # windows cmd
+where /r C:\ <file>.txt
+Get-ChildItem -Path C:\ -Filter <file>.txt -Recurse -ErrorAction SilentlyContinue -Force # windows powershell
+```
+
 ## file/directory scan
 
 ```bash
