@@ -1,4 +1,4 @@
-[GTFOBins](https://gtfobins.github.io/), [LinSmartEnum](https://github.com/diego-treitos/linux-smart-enumeration), [LinEnum](https://github.com/rebootuser/LinEnum), [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS)
+[GTFOBins](https://gtfobins.github.io/), [LinSmartEnum](https://github.com/diego-treitos/linux-smart-enumeration), [LinEnum](https://github.com/rebootuser/LinEnum), [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS), [LinuxExploitSuggester](https://github.com/mzet-/linux-exploit-suggester)
 
 [Sherlock](https://github.com/rasta-mouse/Sherlock)
 
