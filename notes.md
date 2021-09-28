@@ -35,6 +35,7 @@ gobuster dir -u <IP> -w /SecLists/Discovery/Web-Content/raft-medium-words.txt -t
 # gobuster scan directory
 gobuster dir -u <IP> -w ~/usr/share/wordlists/dirb/big.txt -t 30
 gobuster dir -u <IP> -w ~/SecLists/Discovery/Web-Content/raft-medium-words.txt -t 30
+gobuster dir -u <IP> -w ~/SecLists/Discovery/Web-Content/raft-medium-directories.txt --timeout 7s -t 50 -f
 
 # dirsearch
 dirsearch -u <IP> -w <wordlist>
