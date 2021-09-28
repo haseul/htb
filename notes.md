@@ -12,6 +12,12 @@ nmap -T4 -sC -sV -p- --min-rate=1000 -oN <FILE> <IP> -Pn
 massscan -p1-65535 <IP>
 ```
 
+## scan local network
+```bash
+nmap -sn 192.168.1.0/24
+arp-scan 192.168.1.0/24
+```
+
 ## find files
 ```bash
 find / -iname <file>.txt 2>/dev/null # linux
