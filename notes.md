@@ -27,8 +27,14 @@ Get-ChildItem -Path C:\ -Filter <file>.txt -Recurse -ErrorAction SilentlyContinu
 gobuster dir -u <IP> -w /SecLists/Discovery/Web-Content/raft-medium-words.txt -t 30 -x php
 
 # gobuster scan directory
-gobuster dir -u <IP> -w /usr/share/wordlists/dirb/big.txt -t 30
-gobuster dir -u <IP> -w /SecLists//Discovery/Web-Content/raft-medium-words.txt -t 30
+gobuster dir -u <IP> -w ~/usr/share/wordlists/dirb/big.txt -t 30
+gobuster dir -u <IP> -w ~/SecLists/Discovery/Web-Content/raft-medium-words.txt -t 30
+
+# dirsearch
+dirsearch -u <IP> -w <wordlist>
+
+# ffuf 
+ffuf -u <IP>/FUZZ -w <wordlist>
 ```
 
 ----
