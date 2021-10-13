@@ -29,6 +29,8 @@ Get-ChildItem -Path C:\ -Filter <file>.txt -Recurse -ErrorAction SilentlyContinu
 ## file/directory scan
 
 ```bash
+gobuster dir -u <IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html --timeout 50s -t 170 -f -o gobsuter
+
 # gobsuter scan php files
 gobuster dir -u <IP> -w /SecLists/Discovery/Web-Content/raft-medium-words.txt -t 30 -x php
 
