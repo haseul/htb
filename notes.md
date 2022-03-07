@@ -1,4 +1,4 @@
-[GTFOBins](https://gtfobins.github.io/), [LinSmartEnum](https://github.com/diego-treitos/linux-smart-enumeration), [LinEnum](https://github.com/rebootuser/LinEnum), [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS), [LinuxExploitSuggester](https://github.com/mzet-/linux-exploit-suggester)
+[GTFOBins](https://gtfobins.github.io/), [LinSmartEnum](https://github.com/diego-treitos/linux-smart-enumeration), [LinEnum](https://github.com/rebootuser/LinEnum), [LinPEAS](https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS), [LinuxExploitSuggester](https://github.com/mzet-/linux-exploit-suggester), [suider](https://github.com/etc5had0w/suider)
 
 [Sherlock](https://github.com/rasta-mouse/Sherlock), [impacket](https://github.com/SecureAuthCorp/impacket), [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec), [Evil-WinRM](https://github.com/Hackplayers/evil-winrm)
 
