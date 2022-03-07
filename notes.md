@@ -8,6 +8,9 @@
 # nmap scan allports, service/version info, script scan
 nmap -T4 -sC -sV -p- --min-rate=1000 -oN <FILE> <IP> -Pn
 
+# udp scan
+nmap -sU -v <IP> -oN nmap/udp-ports
+
 # masscan all tcp ports
 massscan -p1-65535 <IP>
 ```
