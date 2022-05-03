@@ -11,6 +11,9 @@ nmap -T4 -sC -sV -p- --min-rate=1000 -oN <FILE> <IP> -Pn
 # udp scan top 1000 ports
 nmap -sU -sC -sV -vvv <IP> -oN nmap/udp-ports
 
+# scan a port for vuln scripts
+nmap -p <PORT> -script vuln <IP>
+
 # masscan all tcp ports
 massscan -p1-65535 <IP>
 ```
