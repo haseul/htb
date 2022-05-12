@@ -38,18 +38,21 @@ Get-ChildItem -Path C:\ -Filter <file>.txt -Recurse -ErrorAction SilentlyContinu
 gobuster dir -u <IP> -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html --timeout 50s -t 170 -f -o gobsuter
 
 # gobsuter scan php files
-gobuster dir -u <IP> -w /SecLists/Discovery/Web-Content/raft-medium-words.txt -t 30 -x php
+gobuster dir -u <IP> -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-words.txt -t 30 -x php
 
 # gobuster scan directory
-gobuster dir -u <IP> -w ~/usr/share/wordlists/dirb/big.txt -t 30
-gobuster dir -u <IP> -w ~/SecLists/Discovery/Web-Content/raft-medium-words.txt -t 30
-gobuster dir -u <IP> -w ~/SecLists/Discovery/Web-Content/raft-medium-directories.txt --timeout 7s -t 50 -f
+gobuster dir -u <IP> -w /usr/share/wordlists/dirb/big.txt -t 30
+gobuster dir -u <IP> -w /usr/share/wordlists/seclists/Discovery/Web-Content/raft-medium-words.txt -t 30
+gobuster dir -u <IP> -w /usr/share/wordlists/seclists//Discovery/Web-Content/raft-medium-directories.txt --timeout 7s -t 50 -f
 
 # dirsearch
 dirsearch -u <IP> -w <wordlist>
 
 # ffuf 
 ffuf -u <IP>/FUZZ -w <wordlist>
+
+# ffuf subdomain scan
+ffuf -w /usr/share/wordlists/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://website.com/ -H "Host: FUZZ.website.com" -of html -o scans/ffuf.1.html
 ```
 
 ----
