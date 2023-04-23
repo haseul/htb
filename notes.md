@@ -136,4 +136,7 @@ sudo password
 
 # metasploit migrate to diff process
 migrate <process_id>
+
+# cracking hash with hashcat
+hashcat -a -m 400 hashfile /usr/share/wordlists/rockyou.txt 
 ```
